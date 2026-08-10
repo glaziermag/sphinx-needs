@@ -278,7 +278,7 @@ def process_filters(
 def filter_needs_mutable(
     needs: NeedsMutable,
     config: NeedsSphinxConfig,
-    filter_string: None | str = "",
+    filter_string: str | None = "",
     current_need: NeedItem | None = None,
     *,
     location: tuple[str, int | None] | nodes.Node | None = None,
@@ -411,7 +411,7 @@ def _analyze_and_apply_expr(
 def filter_needs_view(
     needs: NeedsView,
     config: NeedsSphinxConfig,
-    filter_string: None | str = "",
+    filter_string: str | None = "",
     current_need: NeedItem | None = None,
     *,
     location: tuple[str, int | None] | nodes.Node | None = None,
@@ -452,7 +452,7 @@ def filter_needs_view(
 def filter_needs_parts(
     needs: NeedsAndPartsListView,
     config: NeedsSphinxConfig,
-    filter_string: None | str = "",
+    filter_string: str | None = "",
     current_need: NeedItem | None = None,
     *,
     location: tuple[str, int | None] | nodes.Node | None = None,
@@ -494,7 +494,7 @@ def filter_needs_parts(
 def filter_needs(
     needs: Iterable[NeedItem],
     config: NeedsSphinxConfig,
-    filter_string: None | str = "",
+    filter_string: str | None = "",
     current_need: NeedItem | None = None,
     *,
     location: tuple[str, int | None] | nodes.Node | None = None,
@@ -516,7 +516,7 @@ def filter_needs(
 def filter_needs_and_parts(
     needs: Iterable[NeedItem | NeedPartItem],
     config: NeedsSphinxConfig,
-    filter_string: None | str = "",
+    filter_string: str | None = "",
     current_need: NeedItem | NeedPartItem | None = None,
     *,
     location: tuple[str, int | None] | nodes.Node | None = None,
